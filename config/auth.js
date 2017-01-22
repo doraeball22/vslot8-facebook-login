@@ -2,7 +2,8 @@ module.exports = {
   facebookAuth: {
     clientID: '452187178503318',
     clientSecret: '17d0ff71021f2ff98c28606f639aa6fd',
-    callbackURL: 'http://localhost:3000/auth/facebook/callback',
+    // callbackURL: 'http://localhost:3000/auth/facebook/callback',
+    callbackURL: 'http://http://bondev-na343ke6.cloudapp.net:3000/auth/facebook/callback',
   },
   twitterAuth: {
     consumerKey: 'sOM9aZpoEyNAXKqvEUHd2O7cN',
