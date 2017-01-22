@@ -91,6 +91,9 @@
                 <h2>ขั้นตอนที่3 ส่งข้อความมาหาเรา</h2>
                 <p>ส่งข้อความมาทาง LINE@vslot8 ว่า "รับเงินจากกิจกรรมแจกเงิน 100 บาท"</p>
                 <p>"พร้อมทั้งแจ้งชื่อใน facebook ที่ใช้สมัคร"</p>
+
+                
+
                 <a href="#money" class="btn btn-default btn-lg">รับเงิน</a>
                 
             </div>
@@ -106,6 +109,13 @@
                     <p>แจ้งเลขที่บัญชีของท่านในการรับเงิน</p>
                     <p>***หมายเหตุ: ขอสงวนสิทธิ์ชื่อบัญชีใน facebook ตรงกับชื่อบัญชีธนาคารของท่าน***</p>
                     
+                    <% if (user.facebook.id != null) { %>
+            <h2 class="fa fa-facebook"> Facebook</h2><br>
+            <img src="https://avatars.io/gravatar/<%= user.facebook.email %>/140" class="img-circle"><br>
+            <strong>id</strong>: <%= user.facebook.id %><br>
+            <strong>email</strong>: <%= user.facebook.email %><br>
+            <strong>name</strong>: <%= user.facebook.name %>
+          <% } %>
                     
                 </div>
             </div>
